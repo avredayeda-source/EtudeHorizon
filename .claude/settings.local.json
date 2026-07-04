@@ -18,7 +18,15 @@
       "Write",
       "Edit",
       "Glob",
-      "Grep"
+      "Grep",
+      "Bash(pip --version)",
+      "Bash(python -c \"import agent.main; print\\('OK: todos los módulos cargan correctamente'\\)\")",
+      "Bash(python *)",
+      "Bash(PYTHONIOENCODING=utf-8 PYTHONUTF8=1 python *)",
+      "PowerShell(Get-Process *)",
+      "PowerShell(Get-CimInstance *)",
+      "Bash(PYTHONIOENCODING=cp1252 python tests/test_local.py)",
+      "Bash(export DATABASE_URL=\"sqlite+aiosqlite:///./_clean_test.db\")"
     ]
   }
 }

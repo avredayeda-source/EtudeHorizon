@@ -1,0 +1,44 @@
+# Configuración del negocio — Generado por AgentKit
+negocio:
+  nombre: "ÉtudeHorizon"
+  descripcion: >
+    ÉtudeHorizon est une équipe de jeunes étudiants africains, fondée par un
+    Ivoirien. La mission : aider d'autres étudiants africains à étudier à
+    l'étranger à moindre coût. Entreprise en ligne avec une équipe d'étudiants
+    présente sur place dans chaque pays de destination (accompagnement à distance
+    ET sur le terrain à l'arrivée).
+    Destinations : Inde, Russie, Chine (démarches directes via l'équipe sur place,
+    plus rapides et moins chères), France (via Campus France) et Canada (permis
+    d'études, preuve de fonds). Partenaire phare : Lovely Professional University
+    (LPU), Jalandhar, Inde (NAAC A++).
+  horario: "24h/24, 7j/7 — un conseiller humain rappelle sous 24h"
+  slogan: "ÉtudeHorizon, ce qui commence ici change le monde."
+  esprit: "De l'Afrique vers le monde."
+  contacto:
+    telefonos:
+      - "+225 07 89 18 55 01"
+      - "+225 07 05 75 54 66"
+    web: "www.EtudeHorizon.com"
+    ubicaciones:
+      - "Abidjan (Côte d'Ivoire)"
+      - "LPU, Jalandhar (Inde)"
+
+agente:
+  nombre: "Rosemonde"
+  tono: "professionnel-puis-chaleureux"
+  idiomas:
+    - "français"
+    - "anglais"
+  casos_de_uso:
+    - "Calificar y capturar leads (nom, pays visé, numéro WhatsApp)"
+    - "Responder preguntas frecuentes sobre destinos y procesos"
+    - "Orientar sobre destinos, filières, bourses y documentos"
+
+promocion:
+  descripcion: "ZÉRO frais d'agence pour l'Inde (LPU)"
+  fecha_limite: "2026-07-31"
+  rentree: "août-septembre 2026"
+
+metadata:
+  creado: "2026-07-04"
+  version: "1.0"
