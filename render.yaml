@@ -1,0 +1,29 @@
+# Render Blueprint — Despliegue de Rosemonde (ÉtudeHorizon)
+# Render lee este archivo con "New → Blueprint" y configura el servicio solo.
+# Los secretos (sync: false) se ingresan en el panel de Render, nunca en git.
+
+services:
+  - type: web
+    name: etudehorizon-rosemonde
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      # --- Valores públicos (no secretos) ---
+      - key: WHATSAPP_PROVIDER
+        value: twilio
+      - key: ENVIRONMENT
+        value: production
+      - key: TWILIO_PHONE_NUMBER
+        value: "+14155238886"
+      - key: RELANCE_ACTIVA
+        value: "false"
+      # --- Secretos: se ingresan en el panel de Render ---
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
