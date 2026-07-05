@@ -13,17 +13,17 @@ services:
     envVars:
       # --- Valores públicos (no secretos) ---
       - key: WHATSAPP_PROVIDER
-        value: twilio
+        value: meta
       - key: ENVIRONMENT
         value: production
-      - key: TWILIO_PHONE_NUMBER
-        value: "+14155238886"
+      - key: META_VERIFY_TOKEN
+        value: etudehorizon2026
       - key: RELANCE_ACTIVA
         value: "false"
       # --- Secretos: se ingresan en el panel de Render ---
       - key: ANTHROPIC_API_KEY
         sync: false
-      - key: TWILIO_ACCOUNT_SID
+      - key: META_ACCESS_TOKEN
         sync: false
-      - key: TWILIO_AUTH_TOKEN
+      - key: META_PHONE_NUMBER_ID
         sync: false

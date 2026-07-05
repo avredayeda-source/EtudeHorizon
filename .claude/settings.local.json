@@ -26,7 +26,11 @@
       "PowerShell(Get-Process *)",
       "PowerShell(Get-CimInstance *)",
       "Bash(PYTHONIOENCODING=cp1252 python tests/test_local.py)",
-      "Bash(export DATABASE_URL=\"sqlite+aiosqlite:///./_clean_test.db\")"
+      "Bash(export DATABASE_URL=\"sqlite+aiosqlite:///./_clean_test.db\")",
+      "Bash(gh auth *)",
+      "Bash(gh api *)",
+      "Bash(curl -s -m 90 https://etudehorizon-rosemonde.onrender.com/)",
+      "Bash(curl -s -m 90 https://etudehorizon-rosemonde.onrender.com/webhook)"
     ]
   }
 }
