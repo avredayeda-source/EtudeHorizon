@@ -13,9 +13,11 @@ services:
     envVars:
       # --- Valores públicos (no secretos) ---
       - key: WHATSAPP_PROVIDER
-        value: meta
+        value: messenger
       - key: ENVIRONMENT
         value: production
+      - key: MESSENGER_VERIFY_TOKEN
+        value: etudehorizon2026
       - key: META_VERIFY_TOKEN
         value: etudehorizon2026
       - key: RELANCE_ACTIVA
@@ -23,7 +25,5 @@ services:
       # --- Secretos: se ingresan en el panel de Render ---
       - key: ANTHROPIC_API_KEY
         sync: false
-      - key: META_ACCESS_TOKEN
-        sync: false
-      - key: META_PHONE_NUMBER_ID
+      - key: MESSENGER_PAGE_ACCESS_TOKEN
         sync: false
