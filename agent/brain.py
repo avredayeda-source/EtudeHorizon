@@ -20,8 +20,9 @@ logger = logging.getLogger("agentkit")
 # Cliente de Anthropic
 client = AsyncAnthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
-# Modelo de Claude (según CLAUDE.md)
-MODELO = "claude-sonnet-4-6"
+# Modelo de Claude — Haiku 4.5 (rápido y económico, ideal para mensajería).
+# Configurable via CLAUDE_MODEL en .env / Render sin tocar el código.
+MODELO = os.getenv("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
 
 
 def cargar_config_prompts() -> dict:
