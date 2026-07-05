@@ -25,8 +25,11 @@ def obtener_proveedor() -> ProveedorWhatsApp:
     elif proveedor == "messenger":
         from agent.providers.messenger import ProveedorMessenger
         return ProveedorMessenger()
-    elif proveedor in ("meta_unified", "meta_unificado", "both"):
+    elif proveedor in ("meta_unified", "meta_unificado"):
         from agent.providers.meta_unified import ProveedorMetaUnificado
         return ProveedorMetaUnificado()
+    elif proveedor in ("multi", "both", "todo"):
+        from agent.providers.multi import ProveedorMulti
+        return ProveedorMulti()
     else:
-        raise ValueError(f"Proveedor no soportado: {proveedor}. Usa: meta, twilio, messenger o meta_unified")
+        raise ValueError(f"Proveedor no soportado: {proveedor}. Usa: meta, twilio, messenger, meta_unified o multi")
