@@ -50,7 +50,7 @@ class ProveedorTwilio(ProveedorWhatsApp):
             media=media,
         )]
 
-    async def enviar_mensaje(self, telefono: str, mensaje: str) -> bool:
+    async def enviar_mensaje(self, telefono: str, mensaje: str, canal: str = "whatsapp") -> bool:
         """Envía mensaje via Twilio API."""
         if not all([self.account_sid, self.auth_token, self.phone_number]):
             logger.warning("Variables de Twilio no configuradas")

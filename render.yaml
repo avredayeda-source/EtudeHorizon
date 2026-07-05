@@ -13,7 +13,7 @@ services:
     envVars:
       # --- Valores públicos (no secretos) ---
       - key: WHATSAPP_PROVIDER
-        value: messenger
+        value: meta_unified
       - key: ENVIRONMENT
         value: production
       - key: MESSENGER_VERIFY_TOKEN

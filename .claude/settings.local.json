@@ -35,7 +35,8 @@
       "Bash(curl -s -m 30 \"https://graph.facebook.com/v21.0/me?access_token=EAAdmwheYlR4BR7QnnFXNDbhVOZChnExRAN21umgCoDcGLQtw77p9r9VwLYcRDpIHlwDZBLc4KBE98wdJvYBDU3b88JPgOt3eWhnYdGmNO1F5c4lZA3HDOP4t3mkmFMjJZBuhL0uZBOgjcXrYAw3VXln6X3lAxPkZCZALNUeauzYc7LMG0ZAWsAv3iExGTSQCH3sTYdG3RVx9OmMZBZCJ5XTqZA7SIHcSwOZAmI013HlUJZCgxFxzE3OKzrXNx8P7M9IBcjboUFZCvRVOvM9GX3hSPismHlVr5S6SKb5tI8eQZDZD\")",
       "Bash(curl -s -m 30 \"https://graph.facebook.com/v21.0/me/accounts?access_token=EAAdmwheYlR4BR7QnnFXNDbhVOZChnExRAN21umgCoDcGLQtw77p9r9VwLYcRDpIHlwDZBLc4KBE98wdJvYBDU3b88JPgOt3eWhnYdGmNO1F5c4lZA3HDOP4t3mkmFMjJZBuhL0uZBOgjcXrYAw3VXln6X3lAxPkZCZALNUeauzYc7LMG0ZAWsAv3iExGTSQCH3sTYdG3RVx9OmMZBZCJ5XTqZA7SIHcSwOZAmI013HlUJZCgxFxzE3OKzrXNx8P7M9IBcjboUFZCvRVOvM9GX3hSPismHlVr5S6SKb5tI8eQZDZD\")",
       "Bash(curl -s -m 30 \"https://graph.facebook.com/v21.0/me?access_token=EAAdmwheYlR4BR6Ecnlb0uNRahRVxmEZCM7V8M2dkkBhZBZBKlLEBlEWfxl7WmdZAXGDOHBqvMJJJjaQnYzaROCXJ8qxy1m4a6bC29wkx1Icomdvc9QxoNTDZCTucjWpXEuZBdy5w4TwoAHIZAPCdSwjqpZBnTrhA1JvbYozgHhsgbjyEtYE8fqAon7PsuRRAX2UYd25cdrGKGKC0guSWSsN53AZDZD\")",
-      "Bash(export DATABASE_URL=\"sqlite+aiosqlite:///./_haiku_test.db\")"
+      "Bash(export DATABASE_URL=\"sqlite+aiosqlite:///./_haiku_test.db\")",
+      "Bash(base64 -w0 n8n/rosemonde-whatsapp.json)"
     ]
   }
 }

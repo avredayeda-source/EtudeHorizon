@@ -125,10 +125,10 @@ async def webhook_handler(request: Request):
             # Suivi proactif : intención, hesitación, estado, resumen, actividad
             await actualizar_seguimiento(msg.telefono, texto_para_brain, respuesta)
 
-            # Enviar respuesta por WhatsApp via el proveedor
-            await proveedor.enviar_mensaje(msg.telefono, respuesta)
+            # Enviar respuesta por el buen canal (WhatsApp o Messenger)
+            await proveedor.enviar_mensaje(msg.telefono, respuesta, canal=getattr(msg, "canal", "whatsapp"))
 
-            logger.info(f"Respuesta a {msg.telefono}: {respuesta}")
+            logger.info(f"Respuesta a {msg.telefono} ({getattr(msg, 'canal', 'whatsapp')}): {respuesta}")
 
         return {"status": "ok"}
 

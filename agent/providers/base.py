@@ -21,6 +21,8 @@ class MensajeEntrante:
     # Documentos/adjuntos enviados por el cliente (PDF, imágenes...).
     # Cada item: {"url": "...", "tipo": "image/jpeg"}
     media: list[dict] = field(default_factory=list)
+    # Canal de origen: "whatsapp" | "messenger" (para responder por el buen canal)
+    canal: str = "whatsapp"
 
 
 class ProveedorWhatsApp(ABC):
@@ -32,8 +34,10 @@ class ProveedorWhatsApp(ABC):
         ...
 
     @abstractmethod
-    async def enviar_mensaje(self, telefono: str, mensaje: str) -> bool:
-        """Envía un mensaje de texto. Retorna True si fue exitoso."""
+    async def enviar_mensaje(self, telefono: str, mensaje: str, canal: str = "whatsapp") -> bool:
+        """Envía un mensaje de texto. Retorna True si fue exitoso.
+        'canal' permite a los proveedores multi-canal (Meta unificado) responder
+        por el buen canal; los demás lo ignoran."""
         ...
 
     async def validar_webhook(self, request: Request) -> dict | int | None:

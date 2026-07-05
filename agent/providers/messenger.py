@@ -86,7 +86,7 @@ class ProveedorMessenger(ProveedorWhatsApp):
                 ))
         return mensajes
 
-    async def enviar_mensaje(self, telefono: str, mensaje: str) -> bool:
+    async def enviar_mensaje(self, telefono: str, mensaje: str, canal: str = "messenger") -> bool:
         """Envía un mensaje via Messenger Send API (telefono = PSID)."""
         if not self.page_access_token:
             logger.warning("MESSENGER_PAGE_ACCESS_TOKEN no configurado")

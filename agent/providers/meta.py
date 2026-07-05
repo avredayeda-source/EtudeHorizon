@@ -65,7 +65,7 @@ class ProveedorMeta(ProveedorWhatsApp):
                         ))
         return mensajes
 
-    async def enviar_mensaje(self, telefono: str, mensaje: str) -> bool:
+    async def enviar_mensaje(self, telefono: str, mensaje: str, canal: str = "whatsapp") -> bool:
         """Envía mensaje via Meta WhatsApp Cloud API."""
         if not self.access_token or not self.phone_number_id:
             logger.warning("META_ACCESS_TOKEN o META_PHONE_NUMBER_ID no configurados")
